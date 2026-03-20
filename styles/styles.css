@@ -2,7 +2,7 @@ nav {
     background-color: darkblue;
     padding: 10px;
 }
-
+/*From line 1 to line 4 shows the styling for the nav element in our code*/
 nav a{
     color: white;
     display:block;
