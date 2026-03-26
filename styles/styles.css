@@ -51,7 +51,7 @@ img{
     border:1px solid black;
     padding:2px;
     box-shadow: 0 0 30px gray;
-    margin: 0 0 1rem 1 rem;
+    margin: 0 0 1rem 1rem;
 
 }
 
@@ -64,7 +64,7 @@ main{
 }
 
 body{
-    size: 16px;
+    font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
