@@ -61,9 +61,7 @@ header, main, footer {
 
 h1 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    padding: 15px;
+    color: #fff;
     text-align: center;
 }
 
@@ -92,10 +90,8 @@ h1 {
     top: 20px;
     width: 100%;
     padding: 16px;
-    text-align: center;
     opacity: 0.9;
     background-color: var(--accent1-color);
-    color: #fff;
 }
 
 .hero article img {
