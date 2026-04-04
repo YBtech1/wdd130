@@ -41,36 +41,41 @@
             "" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <form>
-                <div class="contact-item">
-                <label for="name">Name</label>
-                <input type="text" id="q1" required placeholder="eg.Emmanuel Jake">
-                </div>
+    <div class="contact-item">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="eg. Emmanuel Jake">
+    </div>
 
-                <div class="contact-item">
-                <label for="email">Email</label>
-                <input type="text" id="q1" required placeholder="eg.waterrafting@gmail.com">
-                </div>
+    <div class="contact-item">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="eg. waterrafting@gmail.com">
+    </div>
 
-                <div class="contact-item">
-                <label for="message">Message Purpose</label>
-                <input type="radio" name="general" value="">General Enquiry
-                <input type="radio" name="reserve" value="">Reservation question
-                <input type="radio" name="suggetion" value="">Website Suggestion
-                </div>
-                
-                <div class="contact-item">
-                <label for="comments">Message</label>
-                <textarea id="q2" name="q2" rows="4"></textarea>
-                </div>
-                
-                <div class="contact-item">
-                <label for="sub">Please Subscribe to the monthly newsletter</label>
-                <input type="checkbox" name="subscription" id="q3">
-                </div>
-        
+    <div class="contact-item">
+        <p>Message Purpose</p>
 
-                <button type="getintouch">Get in Touch!</button>
-            </form>
+        <input type="radio" id="general" name="purpose" value="general">
+        <label for="general">General Enquiry</label>
+
+        <input type="radio" id="reservation" name="purpose" value="reservation">
+        <label for="reservation">Reservation Question</label>
+
+        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+        <label for="suggestion">Website Suggestion</label>
+    </div>
+
+    <div class="contact-item">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+
+    <div class="contact-item">
+        <input type="checkbox" id="subscribe" name="subscription">
+        <label for="subscribe">Please subscribe to the monthly newsletter</label>
+    </div>
+
+    <button type="submit">Get in Touch!</button>
+</form>
             </div>
             
             <h2>We Are Here to Serve You</h2>
