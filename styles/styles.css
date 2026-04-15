@@ -1,145 +1,214 @@
-*{
+/* RESET */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* GLOBAL */
+body {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-/* :root {
-    --heading-background-color: #f06;
-    --heading-text-color: #333;
-    --heading-font: 'Montserrat', Helvetica, sans-serif;
-    --padding: 1rem;
-    --border: 1px solid rgb(0 0 0 /0.1)
+main {
+    max-width: 840px;
+    margin: 0 auto;
+}
 
-} */
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 
-
-
-
+/* NAVIGATION */
 nav {
     background-color: darkblue;
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    list-style-type: none;
 }
-/*From line 1 to line 4 shows the styling for the nav element in our code*/
-nav a{
+
+nav a {
     color: #fff;
-    display:block;
-    padding: 0.5rem;
-    display: block;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-
+    padding: 0.5rem;
 }
 
-h1{
+/* HEADINGS */
+h1 {
     color: steelblue;
-    padding: .5rem;
+    padding: 0.5rem;
     border-bottom: 1px dotted black;
-
-
 }
 
-img{
+p {
+    margin: 1rem;
+}
+
+/* IMAGES (GENERAL) */
+img {
     width: 150px;
-    height:auto;
-    border:1px solid black;
-    padding:2px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
     box-shadow: 0 0 30px gray;
-    margin: 0 0 1rem 1rem;
-
 }
 
-p{
-    padding: 0;
+/* MAIN IMAGE (FLOAT RIGHT) */
+main img {
+    float: right;
+    margin: 20px 0 1rem 1rem;
+    border: 1px solid steelblue;
 }
 
-main{
-    max-width: 840px;
-}
-
-body{
-    font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-aside{
+/* ASIDE */
+aside {
     width: 20rem;
     text-align: center;
     position: relative;
 }
 
-aside img{
+aside img {
     width: 200px;
-    height: auto;
 }
 
-main img{
-    width: 150px;
-    height: auto;
-    border:1px solid steelblue;
-    padding: 3px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-    margin-top: 20px;
-
-}
-
-p{
-    margin: 1rem;
-}
-
-footer{
-    border-top: 1px dotted black;
-    margin-top: 10px;
-    text-align: center;
-
-}
-
-/*Class Selectors*/
-.box {
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 10%);
-  padding: 1rem;
-  background-color: #ddd;
-  color: #000;
-}
-
-aside h2{
+aside h2 {
     position: absolute;
     top: 120px;
-    left: 120px;
+    left: 50%;
+    transform: translateX(-50%);
     color: #fff;
-
 }
 
-.indent{
-    padding-left: 2rem;
-}
-
-header, .grid, footer{
+/* GRID LAYOUT */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
     max-width: 840px;
     margin: 0 auto;
 }
 
-.grid{
-    display: grid;
-    align-items: center;
-}
-
-main{
+main {
     grid-column: 2/3;
-    margin: 1rem;
 }
 
-aside{
-    width: 20rem;
-    position: relative;
+aside {
     grid-column: 1/2;
-    grid-row: 1/2;
+}
+
+/* BOX */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px dotted black;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* UTILITIES */
+.indent {
+    padding-left: 2rem;
+}
+
+/* ===================== */
+/* 🔥 NEW ENHANCEMENTS */
+/* ===================== */
+
+/* HERO */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: none;
+    border: none;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* BUTTONS */
+.hero-btn,
+.cta-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: orange;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 40px;
+    background: #f4f4f4;
+}
+
+/* FEATURES GRID */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: none;
+    box-shadow: none;
 }
